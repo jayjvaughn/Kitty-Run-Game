@@ -29,7 +29,9 @@ position: absolute;
 bottom: 7%;
 left: 5%;
 background-image: url('./assets/myCat.gif');
-animation: jump 550ms;
+}
+.jumpAnimation{
+    animation: jump 550ms;
 }
 @keyframes jump {
     0%{bottom: 7%;}
