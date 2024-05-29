@@ -1,4 +1,6 @@
 .game {
+margin-left: auto;
+margin-right: auto;
 width: 1200px;
 height: 700px;
 border: 2px solid;
@@ -24,7 +26,15 @@ animation: backgroundMotion 5s linear infinite;
 width: 270px;
 height: 190px;
 position: absolute;
-bottom: 5%;
+bottom: 7%;
+left: 5%;
 background-image: url('./assets/myCat.gif');
+animation: jump 550ms;
+}
+@keyframes jump {
+    0%{bottom: 7%;}
+    30%{bottom: 50%;}
+    70%{bottom: 50%;}
+    100%{bottom: 7%;}
 }
 
