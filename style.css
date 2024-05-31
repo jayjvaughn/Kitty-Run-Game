@@ -1,30 +1,30 @@
 .game {
-        margin-left: auto;
-        margin-right: auto;
-        width: 1200px;
-        height: 600px;
-        border: 2px solid;
-        overflow: hidden;
-        position: relative;
-        }
-        .scroll{
-        height: 600px;
-        width: 3600px;
-        background-image: url('./assets/gameBackgroundResized.jpeg');
-        animation: backgroundMotion 5s linear infinite;
-        }
+margin-left: auto;
+margin-right: auto;
+width: 1200px;
+height: 600px;
+border: 2px solid;
+overflow: hidden;
+position: relative;
+}
+.scroll{
+height: 600px;
+width: 3600px;
+background-image: url('./assets/gameBackgroundResized.jpeg');
+animation: backgroundMotion 5s linear infinite;
+}
         @keyframes backgroundMotion {
             0% {background-position: 1200px;}
             100%{ background-position: -1200px;}
             }
         
-        .kitty {
-        width: 270px;
-        height: 190px;
-        position: absolute;
-        bottom: 7%;
-        left: 5%;
-        }
+.kitty {
+width: 270px;
+height: 190px;
+position: absolute;
+bottom: 50px;
+left: 50px;
+}
         .jumpAnimation{
             animation: jump 550ms;
         }
@@ -34,3 +34,21 @@
             70%{bottom: 50%;}
             100%{bottom: 7%;}
         }
+.crab {
+position: absolute;
+width: 149px;
+bottom: 50px;
+left: 1000px;
+}
+.girl{
+position: absolute;
+width: 149px;
+bottom: 50px;
+left: 800px;
+}
+.castle{
+position: absolute;
+width: 149px;
+bottom: 20px;
+left: 500px;
+}
