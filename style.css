@@ -39,16 +39,28 @@ position: absolute;
 width: 149px;
 bottom: 50px;
 left: 1000px;
+/* animation: crabSlide 4000ms infinite; */
 }
+.slideAnimation{
+    animation: Slide 4000ms infinite;
+}
+@keyframes slide {
+    0%{left: 1200px;}
+    100%{left: -1200px;} 
+}
+/* @keyframes crabSlide {
+    0%{left: 1200px;}
+    100%{left: -1200px;}
+} */
 .girl{
 position: absolute;
-width: 149px;
+width: 139px;
+height: 200 px;
 bottom: 50px;
 left: 800px;
+/* animation: girlSlide 8000ms infinite; */
 }
-.castle{
-position: absolute;
-width: 149px;
-bottom: 20px;
-left: 500px;
-}
+/* @keyframes girlSlide {
+    0%{left: 2000px;}
+    100%{left: -2000px;}
+} */
