@@ -1,26 +1,35 @@
 const kitty = document.querySelector(".kitty");
 const crab = document.querySelector(".crab");
-const obstacle = document.querySelector(".obstacles");
+const girl = document.querySelector(".girl");
 
 function jump(){
     kitty.classList.add("jumpAnimation");
     setTimeout(function(){
     kitty.classList.remove("jumpAnimation");  
     }, 500)
-}
-
-// write function to make crab run on timer
-function slide(){
-    crab.classList.add("slideAnimation");
 };
 
-// setInterval(() => {
-// const kittyTop = parseInt(window.getComputedStyle(kitty).getPropertyValue('top'));
-// const obstacleLeft = parseInt(window.getComputedStyle(obstacle).getPropertyValue('left'));
-// const obstacleTop = parseInt(window.getComputedStyle(obstacle).getPropertyValue('top'));
-// const obstacleRight = parseInt(window.getComputedStyle(obstacle).getPropertyValue('right'));
+// write function to make crab run on timer
+// function slide(){
+//     crab.classList.add("slideAnimation");
+//     girl.classList.add("slideAnimation");
+// };
 
-// },50);
+setInterval(() => {
+const kittyBottom = parseInt(window.getComputedStyle(kitty).getPropertyValue('bottom'));
+const crabLeft = parseInt(window.getComputedStyle(crab).getPropertyValue('left'));
+const girlLeft = parseInt(window.getComputedStyle(girl).getPropertyValue('left'));
+
+if (crabLeft < 140 && crabLeft > 0 && kittyBottom < 219){
+    alert("Game Over");
+    }
+    else if (girlLeft < 140 && girlLeft > 0 && kittyBottom < 219){
+        alert("Game Over");       
+    }
+    // else if (kittyBottom < 119){
+    //     alert("Game Over");   
+    // }
+},50);
 
 
 
