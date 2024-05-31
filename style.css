@@ -17,7 +17,19 @@ animation: backgroundMotion 5s linear infinite;
             0% {background-position: 1200px;}
             100%{ background-position: -1200px;}
             }
-        
+@font-face {
+font-family: "gameplay";
+src: url("./assets/Gameplay.woff2") format('woff2'), url(./assets/Gameplay.woff) format('woff');
+font-weight: normal;
+}
+.scoreBox{
+    color: rgb(223, 81, 169);
+    font-family: 'gameplay';
+    font-size: 50px;
+    position: absolute;
+    left: 50px;
+    top: 50px;
+}
 .kitty {
 width: 270px;
 height: 190px;

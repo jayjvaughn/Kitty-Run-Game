@@ -15,18 +15,18 @@ function jump(){
 //     girl.classList.add("slideAnimation");
 // };
 
-setInterval(() => {
-const kittyBottom = parseInt(window.getComputedStyle(kitty).getPropertyValue('bottom'));
-const crabLeft = parseInt(window.getComputedStyle(crab).getPropertyValue('left'));
-const girlLeft = parseInt(window.getComputedStyle(girl).getPropertyValue('left'));
+// setInterval(() => {
+// const kittyBottom = parseInt(window.getComputedStyle(kitty).getPropertyValue('bottom'));
+// const crabLeft = parseInt(window.getComputedStyle(crab).getPropertyValue('left'));
+// const girlLeft = parseInt(window.getComputedStyle(girl).getPropertyValue('left'));
 
-if (crabLeft < 140 && crabLeft > 0 && kittyBottom < 168){
-    alert("Game Over");
-    }
-    else if (girlLeft < 140 && girlLeft > 0 && kittyBottom < 219){
-        alert("Game Over");       
-    }
-},50);
+// if (crabLeft < 140 && crabLeft > 0 && kittyBottom < 168){
+//     alert("Game Over");
+//     }
+//     else if (girlLeft < 140 && girlLeft > 0 && kittyBottom < 219){
+//         alert("Game Over");       
+//     }
+// },50);
 
 
 
