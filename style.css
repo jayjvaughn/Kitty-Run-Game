@@ -12,9 +12,10 @@ position: relative;
 .youLose{
 display: flex;
 visibility: hidden;
+position: relative;
 flex-direction: column;
 font-size: 100px;
-width: 100vw;
+width: 1200px;
 text-align: center;
 }
 .playAgain{
